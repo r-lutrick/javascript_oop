@@ -9,10 +9,11 @@ class Ninja {
         console.log(`Hai! My name is ${this.name}`)
     }
     showStats() {
+        // console.log(`Name: ${this.name}, Strength: ${this.strength}, Speed: ${this.speed}, Health: ${this.health}`)
         console.log(`Name: ${this.name}`)
-        console.log(`strength: ${this.strength}`)
-        console.log(`speed: ${this.speed}`)
-        console.log(`health: ${this.health}`)
+        console.log(`Strength: ${this.strength}`)
+        console.log(`Speed: ${this.speed}`)
+        console.log(`Health: ${this.health}`)
     }
     drinkSake() {
         this.health += 10
@@ -27,6 +28,10 @@ class Sensei extends Ninja {
     speakWisdom() {
         this.drinkSake()
         console.log("Never put passion in front of principle, even if you win, you will lose")
+    }
+    showStats() {
+        super.showStats()
+        console.log(`Wisdom: ${this.wisdom}`)
     }
 }
 
