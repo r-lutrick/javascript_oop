@@ -20,7 +20,8 @@ class Ninja {
 }
 
 
-const ninja1 = new Ninja("Hyabusa");
-ninja1.sayName();
-ninja1.drinkSake();
-ninja1.showStats();
+// const ninja1 = new Ninja("Hyabusa");
+// ninja1.sayName();
+// ninja1.drinkSake();
+// ninja1.showStats();
+module.exports = Ninja;
